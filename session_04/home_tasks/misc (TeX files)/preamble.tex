@@ -1,0 +1,34 @@
+\documentclass[12pt]{article}
+
+\usepackage[unicode]{hyperref}
+
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{mathtext, mathtools}
+
+\usepackage[T1, T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+
+\usepackage{indentfirst}
+\usepackage{paracol}
+
+\usepackage{geometry}
+\geometry{a4paper,
+	total={170mm,257mm},left=2cm,right=2cm,
+	top=2cm,bottom=2cm}
+
+\usepackage{graphicx}
+
+\usepackage{titleps}
+\newpagestyle{main}{
+	\setheadrule{0.4pt}
+	\sethead{лево}{центр}{право}
+	\setfootrule{0.4pt}
+	\setfoot{left}{\thepage}{право}
+}
+
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\sigmoid}{sigmoid}
+\DeclareMathOperator*{\argmax}{argmax}
+
+\newenvironment{eq_array}{\begin{equation*}\begin{array}{l}}{\end{array}\end{equation*}}
